@@ -1,0 +1,344 @@
+/****************************
+ BODY & GRADIENT
+****************************/
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0f2f1, #c8e6c9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: background 0.3s ease;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/****************************
+ LANDING PAGE
+****************************/
+.landing {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+  max-width: 700px;
+  margin: 20px;
+}
+
+.main-title {
+  font-size: 72px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.landing-desc {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.landing-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.get-started-box {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 18px 45px;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(135deg, #4a90e2, #6bb9f0);
+  border-radius: 14px;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.get-started-box:hover {
+  transform: scale(1.08);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.35);
+  filter: brightness(1.1);
+}
+
+/****************************
+ LOGIN PAGE
+****************************/
+.login-card {
+  background: #ffffff;
+  padding: 50px 40px;
+  width: 400px;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.18);
+}
+
+.login-card input {
+  width: 90%;
+  padding: 14px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-card input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 10px rgba(74,144,226,0.2);
+  outline: none;
+}
+
+.login-card button {
+  width: 95%;
+  padding: 14px;
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background: linear-gradient(135deg, #4a90e2, #6bb9f0);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.login-card button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+  filter: brightness(1.1);
+}
+
+.small-text {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/****************************
+ DASHBOARD PAGE
+****************************/
+.dashboard-main-card {
+  background: #ffffff;
+  padding: 50px 40px;
+  border-radius: 22px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+  text-align: center;
+  max-width: 650px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-main-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 35px 75px rgba(0,0,0,0.18);
+}
+
+.dashboard-main-card h1 {
+  font-size: 38px;
+  color: #2c3e50;
+  margin: 0;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.quote {
+  font-size: 20px;
+  color: #555;
+  font-style: italic;
+  margin: 0;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.dash-btn {
+  padding: 14px 25px;
+  border-radius: 12px;
+  border: none;
+  font-size: 17px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #4a90e2, #6bb9f0);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.dash-btn:hover {
+  transform: scale(1.07);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+  filter: brightness(1.1);
+}
+
+.history-card {
+  background: #f7f9fc;
+  border-radius: 20px;
+  padding: 25px;
+  text-align: left;
+  font-size: 16px;
+  color: #333;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
+  width: 100%;
+  max-width: 650px;
+  min-height: 160px;
+  margin-top: 30px;
+  overflow-y: auto;
+}
+
+.history-card::-webkit-scrollbar {
+  width: 6px;
+}
+
+.history-card::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 3px;
+}
+
+/****************************
+ CHAT PAGE
+****************************/
+.chat-card {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.18);
+  max-width: 500px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 25px 55px rgba(0,0,0,0.2);
+}
+
+#chatBox {
+  min-height: 220px;
+  max-height: 320px;
+  overflow-y: auto;
+  padding: 15px;
+  background: #f7f9fc;
+  border-radius: 14px;
+  font-size: 16px;
+  color: #333;
+}
+
+#chatBox p {
+  margin: 6px 0;
+}
+
+#chatBox p:nth-child(odd) {
+  background: #d1f0ff;
+  padding: 6px 12px;
+  border-radius: 12px;
+}
+
+#chatBox p:nth-child(even) {
+  background: #e6f2ff;
+  padding: 6px 12px;
+  border-radius: 12px;
+}
+
+.chat-card input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+}
+
+.chat-card button {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(135deg, #4a90e2, #6bb9f0);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 5px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.chat-card button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+  filter: brightness(1.1);
+}
+
+/****************************
+ RESPONSIVE
+****************************/
+@media (max-width: 600px) {
+  .dashboard-main-card {
+    padding: 30px 20px;
+  }
+
+  .dashboard-main-card h1 {
+    font-size: 28px;
+  }
+
+  .quote {
+    font-size: 16px;
+  }
+
+  .dash-btn {
+    padding: 12px 20px;
+    font-size: 15px;
+  }
+
+  .history-card {
+    min-height: 140px;
+    padding: 20px;
+  }
+
+  .main-title {
+    font-size: 48px;
+  }
+
+  .get-started-box {
+    font-size: 18px;
+    padding: 14px 30px;
+  }
+
+  .login-card {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .chat-card {
+    width: 95%;
+    padding: 25px 20px;
+  }
+}

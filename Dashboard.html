@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MINDLIFT Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="dashboard-main-card">
+    <h1>Welcome, <span id="username"></span> 🌱</h1>
+    <p class="quote">"Your mental health matters every day!"</p>
+
+    <div class="button-group">
+      <button onclick="showHistory()" class="dash-btn">📜 History</button>
+      <button onclick="goChat()" class="dash-btn">💬 How it’s going on</button>
+    </div>
+  </div>
+
+  <!-- History Output -->
+  <div id="output" class="history-card"></div>
+
+  <script src="script.js"></script>
+  <script>
+    // Set username on page load
+    document.addEventListener("DOMContentLoaded", () => {
+      const username = localStorage.getItem("username") || "User";
+      document.getElementById("username").innerText = username;
+    });
+  </script>
+</body>
+</html>

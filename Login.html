@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | MINDLIFT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="gradient center">
+
+  <div class="login-card">
+    <h2>Welcome Back 🌱</h2>
+    <p class="small-text">Login to continue your wellness journey</p>
+
+    <input id="name" type="text" placeholder="Enter your name">
+    <div style="display:flex; gap:10px; width:100%;">
+      <input id="number" type="tel" placeholder="Mobile number" style="flex:1;">
+      <button onclick="sendOTP()" style="flex:0.7;">Send OTP</button>
+    </div>
+    <input id="otp" type="text" placeholder="Enter OTP">
+    <button onclick="verifyOTP()">Login</button>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
